@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spur Context Results</title>
+    <style>
+      body {
+        width: 400px;
+        min-height: 250px;
+        padding: 10px;
+      }
+      h3 {
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .toggle {
+        margin-left: auto;
+        text-align: right;
+      }
+
+      .toggle label {
+        display: flex;
+        align-items: center;
+      }
+      pre {
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+        font-size: 16px;
+      }
+      .error {
+        color: red;
+        margin-top: 10px;
+      }
+      .separator {
+        margin: 10px 0;
+        border-top: 1px solid #ccc;
+      }
+      .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>
+      <img src="logo192.png" alt="Icon" class="icon" />
+      Spur Context Results
+      <div class="toggle">
+        <label>
+          <input type="checkbox" id="toggleButton" />
+          Show raw JSON
+        </label>
+      </div>
+    </h3>
+    <p id="queriedIP"></p>
+    <div class="separator"></div>
+    <div id="resultContainer">
+      <pre id="parsedResult"></pre>
+      <pre id="rawResult" style="display: none"></pre>
+    </div>
+    <div id="error" class="error"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>

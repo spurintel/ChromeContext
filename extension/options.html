@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spur Context Helper Extension</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(44, 42, 48);
+      }
+      .logo {
+        margin-bottom: 20px;
+      }
+      .form-container {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      input {
+        margin-bottom: 10px;
+        width: 100%;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        size: 40;
+        width: 500px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+      }
+      .button-container button {
+        margin: 0 10px;
+      }
+      h3 {
+        color: white;
+      }
+      #message {
+        margin-top: 10px;
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="horizontal_logo_white.svg" alt="Logo" width="200" />
+    </div>
+    <div class="form-container">
+      <h3>Context API Token</h3>
+      <input type="text" id="tokenInput" placeholder="Enter your API token" />
+    </div>
+    <div class="button-container">
+      <button id="saveButton">Save Token</button>
+      <button id="clearButton">Clear Token</button>
+      <button id="checkButton">Check Token</button>
+    </div>
+    <div id="message"></div>
+    <script src="options.js"></script>
+  </body>
+</html>

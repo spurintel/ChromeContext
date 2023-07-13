@@ -1,0 +1,44 @@
+{
+  "name": "Spur Context Lookup",
+  "description": "Lookup highlighted IP addresses with Spur Context API, either via the right-click context menu, or ctrl+shift+f",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webRequestBlocking",
+    "webRequest"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "16": "logo_white192.png",
+    "48": "logo_white192.png",
+    "128": "logo_white192.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Lookup highlighted IP",
+    "default_icon": {
+      "16": "logo_white192.png",
+      "48": "logo_white192.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Lookup highlighted IP"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
