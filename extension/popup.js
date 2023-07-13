@@ -52,7 +52,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
                 }
             });
         } else {
-            displayError('API token is not set');
+            displayError('API token is not set in the extension options');
             toggleButton.checked = false;
         }
     });

@@ -1,13 +1,12 @@
 {
   "name": "Spur Context Lookup",
-  "description": "Lookup highlighted IP addresses with Spur Context API, either via the right-click context menu, or ctrl+shift+f",
+  "description": "Lookup highlighted IP addresses with Spur Context API",
   "version": "0.1",
   "manifest_version": 3,
   "permissions": [
     "storage",
     "activeTab",
-    "webRequestBlocking",
-    "webRequest"
+    "declarativeNetRequest"
   ],
   "content_scripts": [
     {
