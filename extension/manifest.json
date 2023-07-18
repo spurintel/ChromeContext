@@ -5,8 +5,7 @@
   "manifest_version": 3,
   "permissions": [
     "storage",
-    "activeTab",
-    "declarativeNetRequest"
+    "activeTab"
   ],
   "content_scripts": [
     {
